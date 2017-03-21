@@ -1,144 +1,576 @@
 {
   "general": {
-    "userAgentAdd": "gonative",
-    "initialUrl": "https://gonative.io",
-    "appName": "GoNative.io"
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "deviceRegKey": "fz2hhv1mkg0513xhdxvrnw3p6r",
+    "publicKey": "eeybep",
+    "androidVersionName": "1.0.2",
+    "androidPackageName": "markoidzan.maskicehr",
+    "iosBundleId": "marko.maskicehr",
+    "appName": "maskice.hr",
+    "initialUrl": "https://maskice.hr",
+    "forceScreenOrientation": null,
+    "useCrosswalkWebView": false,
+    "enableWindowOpen": true,
+    "useWKWebView": false,
+    "userAgentAdd": "gonative"
   },
   "navigation": {
     "androidPullToRefresh": true,
-    "sidebarNavigation": {
-      "sidebarEnabledRegex": null,
-      "menus": [{
-        "name": "default",
-        "items": [{
-          "url": "https://gonative.io/",
-          "label": "Home",
-          "subLinks": []
-        }, {
-          "url": "https://gonative.io/features/",
-          "label": "Features",
-          "subLinks": []
-        }, {
-          "url": "https://gonative.io/examples/",
-          "label": "Examples",
-          "subLinks": []
-        }],
-        "active": true
-      }]
-    },
+    "iosPullToRefresh": true,
     "tabNavigation": {
-      "tabSelectionConfig": [{
-        "id": "1",
-        "regex": ".*features.*"
-      }],
-      "tabMenus": [{
-        "id": "1",
-        "items": [{
-          "icon": "fa-inbox",
-          "label": "Tab 1",
-          "url": "javascript:alert('You selected tab 1. These tabs are only shown on the features page')"
-        }, {
-          "label": "Tab 2",
-          "url": "javascript:alert('You selected tab 2. These tabs are only shown on the features page')"
-        }, {
-          "label": "Tab 3",
-          "url": "javascript:alert('You selected tab 3. These tabs are only shown on the features page')"
-        }]
-      }],
-      "active": true
+      "tabSelectionConfig": [
+        {
+          "id": "1",
+          "regex": ""
+        }
+      ],
+      "tabMenus": [
+        {
+          "id": "1",
+          "items": [
+            {
+              "subLinks": []
+            }
+          ]
+        }
+      ],
+      "active": false
     },
-    "actionConfig": {
-      "active": true,
-      "actions": [{
-        "id": "exampleActions",
-        "items": [{
-          "label": "Globe",
-          "icon": "fa-globe",
-          "url": "javascript:alert('You tapped the globe! It only appears on the Examples page')"
-        }]
-      }],
-      "actionSelection": [{
-        "regex": ".*/examples.*",
-        "id": "exampleActions"
-      }]
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": null,
+            "menuName": "default",
+            "loggedIn": false
+          },
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ],
+        "testURL": null
+      },
+      "menus": [
+        {
+          "name": "default",
+          "active": true,
+          "items": [
+            {
+              "label": "Naslovnica",
+              "url": "https://maskice.hr/",
+              "subLinks": []
+            },
+            {
+              "label": "Maskice za mobitele",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Alcatel",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/alcatel/"
+                },
+                {
+                  "label": "Apple",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/apple/"
+                },
+                {
+                  "label": "Google",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/google/"
+                },
+                {
+                  "label": "HTC",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/htc/"
+                },
+                {
+                  "label": "Huawei",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/huawei/"
+                },
+                {
+                  "label": "Lenovo",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/lenovo/"
+                },
+                {
+                  "label": "LG",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/lg/"
+                },
+                {
+                  "label": "Microsoft",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/microsoft/"
+                },
+                {
+                  "label": "Nokia",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/nokia/"
+                },
+                {
+                  "label": "Samsung",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/samsung/"
+                },
+                {
+                  "label": "Sony",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/sony/"
+                },
+                {
+                  "label": "Xiaomi",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/xiaomi/"
+                },
+                {
+                  "label": "ZTE",
+                  "url": "https://maskice.hr/kategorija-proizvoda/maskice-za-mobitele/zte/"
+                }
+              ]
+            },
+            {
+              "label": "Adapteri, držači & punjači",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Autopunjači",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/autopunjaci/"
+                },
+                {
+                  "label": "Power bank-ovi",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/power-bank/"
+                },
+                {
+                  "label": "USB kablovi i punjači",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/usb-kablovi-i-punjaci/"
+                },
+                {
+                  "label": "Adnroid adapteri",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/android-adapteri/"
+                },
+                {
+                  "label": "iPhone adapteri",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/iphone-adapteri/"
+                },
+                {
+                  "label": "SIM adapteri",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/adapteri-i-punjaci/sim-adapteri/"
+                },
+                {
+                  "label": "Držači za auto",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/drzaci-za-auto/"
+                },
+                {
+                  "label": "Držači za bicikl",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/drzac-mobitela-za-bicikl/"
+                },
+                {
+                  "label": "Držači za ruku",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/drzaci-za-ruku-armband/"
+                },
+                {
+                  "label": "Držači za stol",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/stolni-drzaci/"
+                },
+                {
+                  "label": "Dodatci za selfie",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/selfie-dodatci/"
+                },
+                {
+                  "label": "Selfie štap",
+                  "url": "https://maskice.hr/kategorija-proizvoda/adapteri-drzaci-punjaci/drzaci/selfie-stap-selfie-stick/"
+                }
+              ]
+            },
+            {
+              "label": "Kamere",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Sportske kamere",
+                  "url": "https://maskice.hr/kategorija-proizvoda/kamere/sportske-kamere/"
+                },
+                {
+                  "label": "Auto kamere (Dashcam)",
+                  "url": "https://maskice.hr/kategorija-proizvoda/kamere/auto-kamere/"
+                },
+                {
+                  "label": "Oprema za sportske kamere",
+                  "url": "https://maskice.hr/kategorija-proizvoda/kamere/dodatci-za-sportske-kamere/"
+                },
+                {
+                  "label": "Dodatci za kamere",
+                  "url": "https://maskice.hr/kategorija-proizvoda/kamere/dodatci-za-kamere/"
+                }
+              ]
+            },
+            {
+              "label": "Slušalice & zvučnici",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Bluetooth slušalice",
+                  "url": "https://maskice.hr/kategorija-proizvoda/slusalice-zvucnici/slusalice/bluetooth-slusalice/"
+                },
+                {
+                  "label": "Žičane slušalice",
+                  "url": "https://maskice.hr/kategorija-proizvoda/slusalice-zvucnici/slusalice/zicane-slusalice/"
+                },
+                {
+                  "label": "Bluetooth zvučnici",
+                  "url": "https://maskice.hr/kategorija-proizvoda/slusalice-zvucnici/zvucnici/bluetooth-zvucnici/"
+                },
+                {
+                  "label": "Prijenosni zvučnici",
+                  "url": "https://maskice.hr/kategorija-proizvoda/slusalice-zvucnici/zvucnici/prijenosni-zvucnici/"
+                },
+                {
+                  "label": "FM Radio prijemnici",
+                  "url": "https://maskice.hr/kategorija-proizvoda/slusalice-zvucnici/zvucnici/fm-radio-prijamnici/"
+                }
+              ]
+            },
+            {
+              "label": "Gadgeti",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Dronovi",
+                  "url": "https://maskice.hr/kategorija-proizvoda/gadgeti/dronovi/"
+                },
+                {
+                  "label": "GPS Navigacije",
+                  "url": "https://maskice.hr/kategorija-proizvoda/gadgeti/gps-navigacije/"
+                },
+                {
+                  "label": "Gamepadi",
+                  "url": "https://maskice.hr/kategorija-proizvoda/gadgeti/gamepad/"
+                },
+                {
+                  "label": "VR naočale",
+                  "url": "https://maskice.hr/kategorija-proizvoda/gadgeti/vr-naocale/"
+                }
+              ]
+            },
+            {
+              "label": "Računalna periferija",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Bežični miševi",
+                  "grouping": "[grouping]",
+                  "isGrouping": true,
+                  "isSubmenu": false,
+                  "subLinks": [],
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/bezicni-mis/"
+                },
+                {
+                  "label": "Žičani miševi",
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/zicani-mis/"
+                },
+                {
+                  "label": "Podloga za miševe",
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/podloga-za-mis/"
+                },
+                {
+                  "label": "Tipkovnice",
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/tipkovnice/"
+                },
+                {
+                  "label": "USB Hub",
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/usb-hub/"
+                },
+                {
+                  "label": "USB Periferija",
+                  "url": "https://maskice.hr/kategorija-proizvoda/racunalna-periferija/usb-periferija/"
+                }
+              ]
+            },
+            {
+              "label": "Ostala oprema",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "MP3/MP4 Playeri",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/mp3mp4-playeri/"
+                },
+                {
+                  "label": "Memorijske kartice",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/memorijske-kartce/"
+                },
+                {
+                  "label": "Stylus olovka",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/stylus-pen-olovke-za-mobitel/"
+                },
+                {
+                  "label": "Touch Screen rukavice",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/touch-screen-rukavice/"
+                },
+                {
+                  "label": "Univerzalno kaljeno staklo za mobitel",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/univerzalno-kaljeno-staklo/"
+                },
+                {
+                  "label": "Univerzalno kaljeno staklo za tablet",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/univerzalna-kaljena-stakla/"
+                },
+                {
+                  "label": "Univerzalne futrole za mobitel",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/univerzalne-futrole/"
+                },
+                {
+                  "label": "Univerzalne futrole za tablet",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/univerzalne-futrole-za-tablet/"
+                },
+                {
+                  "label": "Univerzalne vodootporne futrole",
+                  "url": "https://maskice.hr/kategorija-proizvoda/ostala-oprema/vodootporne-futrole-univerzalne/"
+                }
+              ]
+            },
+            {
+              "label": "Kontakt",
+              "isGrouping": true,
+              "subLinks": [
+                {
+                  "label": "Mobitel: 095 5555 345",
+                  "url": "tel:+385 95 5555 345"
+                },
+                {
+                  "label": "Telefon: 01 2345 555",
+                  "url": "tel:385 1 2345 555"
+                },
+                {
+                  "label": "E-mail",
+                  "url": "mailto:prodaja@maskice.hr"
+                },
+                {
+                  "label": "Facebook",
+                  "url": "https://www.facebook.com/maskice.hr"
+                }
+              ]
+            },
+            {
+              "label": "O nama",
+              "url": "https://maskice.hr/o-nama/",
+              "subLinks": []
+            },
+            {
+              "label": "Veleprodaja",
+              "url": "https://maskice.hr/veleprodajni-kupac/",
+              "subLinks": []
+            },
+            {
+              "label": "Prijava / Registracija",
+              "url": "https://maskice.hr/moj-racun/",
+              "subLinks": []
+            }
+          ]
+        },
+        {
+          "name": "loggedIn",
+          "active": false,
+          "items": [
+            {
+              "url": "https://maskice.hr/#",
+              "label": "",
+              "subLinks": []
+            }
+          ]
+        }
+      ]
     },
     "regexInternalExternal": {
-      "rules": [{
-        "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
-        "internal": true
-      }, {
-        "regex": "https?://([-\\w]+\\.)*facebook\\.com/pages/.*",
-        "internal": false
-      }, {
-        "regex": "https?://([-\\w]+\\.)*facebook\\.com/sharer\\.php.*",
-        "internal": false
-      }, {
-        "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
-        "internal": false
-      }, {
-        "regex": "https?://([-\\w]+\\.)*twitter\\.com/intent/.*",
-        "internal": false
-      }, {
-        "regex": "https?://([-\\w]+\\.)*gonative\\.io/?.*",
-        "internal": true
-      }, {
-        "regex": "https?://([-\\w]+\\.)*google\\.com/?.*",
-        "internal": true
-      }],
+      "rules": [
+        {
+          "regex": "^(?!https?://).*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/login.php.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/dialog.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v1\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/oauth.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/v2\\.0/.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com/checkpoint.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*",
+          "internal": true
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*plus\\.google\\.com/share.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://maps\\.google\\.com.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*",
+          "internal": false
+        },
+        {
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*",
+          "internal": false
+        },
+        {
+          "regex": ".*",
+          "internal": true
+        }
+      ],
       "active": true
     },
-    "redirects": [{
-      "from": "https://example.com/from/",
-      "to": "https://example.com/to/"
-    }]
-  },
-  "forms": {
-    "search": {
-      "active": true,
-      "searchTemplateURL": "https://www.google.com/search?q="
-    }
+    "navigationTitles": {
+      "titles": [
+        {}
+      ],
+      "active": false
+    },
+    "redirects": [],
+    "ignorePageFinishedRegexes": [],
+    "toolbarNavigation": null,
+    "navigationLevels": {
+      "active": false,
+      "levels": [
+        {}
+      ]
+    },
+    "deepLinkDomains": [],
+    "iosShowRefreshButton": false,
+    "androidShowRefreshButton": false
   },
   "styling": {
-    "showActionBar": true,
-    "showNavigationBar": true,
-    "iosTitleColor": "#333333",
-    "iosTintColor": "#0091fe",
-    "androidTheme": "Light.DarkActionBar",
-    "androidSidebarBackgroundColor": "#111111",
-    "androidSidebarForegroundColor": "#d0d0d0",
-    "androidHideTitleInActionBar": false,
-    "androidPullToRefreshColor": "#333333",
-    "androidShowSplash": true,
-    "androidShowSplashMaxTime": null,
-    "androidShowSplashForceTime": null,
-    "disableAnimations": false,
+    "transitionInteractiveDelayMax": 0.2,
     "menuAnimationDuration": 0.15,
-    "transitionInteractiveDelayMax": 0.2
+    "iosLaunchImages": {
+      "ios_launch_2208x1242": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560915_frqa5vpggen5j_2208x1242.png",
+      "ios_launch_1242x2208": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560915_9jh682y2d87m4_1242x2208.png",
+      "ios_launch_750x1334": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560915_j8a3pvncpa9j4_750x1334.png",
+      "ios_launch_2048x1536": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560915_9m9jjfga771h2_2048x1536.png",
+      "ios_launch_1536x2048": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560914_uj8n5w5vdcm4r_1536x2048.png",
+      "ios_launch_1024x768": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560914_1mm4vcwbdd29m_1024x768.png",
+      "ios_launch_768x1024": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560914_w3y54ua0t7x5j_768x1024.png",
+      "ios_launch_640x1136": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560914_683fvw1eypq8p_640x1136.png",
+      "ios_launch_640x960": "https://s3.amazonaws.com/gonativeio/images_generated/1490090560914_1314rjtd37580_640x960.png"
+    },
+    "androidLaunchImages": {
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1490085739897_drduapgcj8e00_720x720.9.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1490085739897_petxhtyv9wmn6_540x540.9.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1490085739897_7pm7r8fd1d854_360x360.9.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1490085739897_0k2am9kgmaeq8_270x270.9.png",
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1490085739895_wv1tnqvjmzdc2_180x180.9.png"
+    },
+    "androidShowSplash": true,
+    "disableAnimations": true,
+    "hideWebviewAlpha": 0.5,
+    "androidHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/ydctpjgq12nj8_1490085904409.png",
+    "navigationTitleImageLocation": "https://gonativeio.s3.amazonaws.com/uploads/bpgn7e3bg59y2_1490085891601.png",
+    "androidStatusBarBackgroundColor": "#d2b836",
+    "iosSidebarTextColor": "#333333",
+    "iosTintColor": "#0091fe",
+    "iosTitleColor": "#FFE563",
+    "androidTabBarIndicatorColor": "#000000",
+    "androidTabBarTextColor": "#000000",
+    "androidTabBarBackgroundColor": "#bdbdbd",
+    "androidSidebarSeparatorColor": "#919191",
+    "androidAccentColor": "#FFE563",
+    "androidPullToRefreshColor": "#777777",
+    "androidActionBarForegroundColor": "#000000",
+    "androidActionBarBackgroundColor": "#FFE563",
+    "androidSidebarForegroundColor": "#000000",
+    "androidSidebarBackgroundColor": "#FFE563",
+    "androidTheme": "dark",
+    "iosTheme": "dark",
+    "navigationTitleImage": false,
+    "androidHideTitleInActionBar": true,
+    "iosSidebarFont": "Default",
+    "showNavigationBar": true,
+    "showActionBar": true,
+    "iosHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/y6dz3xpm8evty_1490085923128.gif",
+    "icon": "https://gonativeio.s3.amazonaws.com/uploads/jyj633r6mmhcm_1490085712208.jpeg",
+    "customCSS": "/** Custom CSS for maskice.hr WebApp\n**  Created using GoNative.io\n**  CSS Edited by: Marko Idzan\n**  Editor website: https://idzan.com.hr\n**  Application name: maskice.hr\n**  Application website: https://maskice.hr\n**  Build time: 21.03.2017. 12:15 CET\n**  GPL Licensed\n**  Source Code Availiable on GitHub\n**  GitHub link:\n**  https://github.com/markoidzan/marko.maskicehr.android\n**/\n\nul.mobile-nav {\n\tdisplay:none;\n}\ndiv.header-wrapper {\n\tdisplay:none;\n}"
+  },
+  "forms": {
+    "interceptForms": {
+      "forms": []
+    },
+    "search": {
+      "searchTemplateURL": "https://maskice.hr/?s=",
+      "active": true
+    },
+    "loginConfig": {
+      "formInputs": [],
+      "loginIsFirstPage": false,
+      "formSelector": null
+    },
+    "signupConfig": {
+      "formInputs": [],
+      "formSelector": null,
+      "active": false
+    }
   },
   "permissions": {
-    "usesGeolocation": false,
-    "androidDownloadToPublicStorage": false
+    "usesGeolocation": false
+  },
+  "publishing": {},
+  "performance": {
+    "webviewPools": [
+      {
+        "urls": [
+          {
+            "disown": "reload"
+          }
+        ]
+      }
+    ]
   },
   "services": {
-    "oneSignal": {
-      "active": false,
-      "applicationId": ""
-    },
-    "facebook": {
-      "active": false,
-      "appId": "",
-      "displayName": ""
+    "push": {
+      "active": false
     },
     "analytics": {
       "active": false
     },
     "registration": {
-      "active": false,
-      "endpoints": [{
-        "url": "https://gonative.io/example_push_endpoint",
-        "dataType": "onesignal",
-        "urlRegex": ".*/loginfinished"
-      }]
+      "endpoints": [
+        {
+          "dataType": [
+            "parse",
+            "oneSignal"
+          ],
+          "urlRegex": null,
+          "url": null
+        }
+      ],
+      "active": false
+    },
+    "oneSignal": {
+      "active": false
+    },
+    "facebook": {
+      "active": false
+    },
+    "parse": {
+      "pushEnabled": false,
+      "active": false
     }
   }
 }
